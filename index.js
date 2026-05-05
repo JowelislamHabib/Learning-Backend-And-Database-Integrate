@@ -15,4 +15,33 @@ app.get("/about", (req, res) => {
   res.send("I am from About");
 });
 
-app.listen(port, () => {});
+const users = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john@example.com",
+  },
+  {
+    id: 1,
+    name: "Don Doe",
+    email: "don@example.com",
+  },
+  {
+    id: 2,
+    name: "Mon Doe",
+    email: "mon@example.com",
+  },
+  {
+    id: 3,
+    name: "Kon Doe",
+    email: "kon@example.com",
+  },
+];
+
+app.get("/users", (req, res) => {
+  res.send(users);
+});
+
+app.listen(port, () => {
+  console.log(`Listening ${port}`);
+});
