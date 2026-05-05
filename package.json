@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/JowelislamHabib/Learning-Backend-And-Database-Integrate/issues"
   },
-  "homepage": "https://github.com/JowelislamHabib/Learning-Backend-And-Database-Integrate#readme"
+  "homepage": "https://github.com/JowelislamHabib/Learning-Backend-And-Database-Integrate#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
